@@ -2,7 +2,7 @@ import React from 'react';
 
 const Tree = ({ node }) => {
   if (!node.branches) {
-    return <div>{node.label}</div>; // Hoja
+    return <div>{node.label}</div>; 
   }
 
   return (

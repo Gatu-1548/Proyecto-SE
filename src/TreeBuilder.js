@@ -5,11 +5,11 @@ export function buildTree(data, attributes, targetAttribute, depth = 0) {
   const cleanedData = imputeAllNulls(data);
   console.log(cleanedData);
   if (cleanedData.every(row => row[targetAttribute] === cleanedData[0][targetAttribute])) {
-    return { label: cleanedData[0][targetAttribute] }; // Hoja
+    return { label: cleanedData[0][targetAttribute] }; 
   }
 
   if (attributes.length === 0) {
-    return { label: "Indeciso" }; // Caso límite
+    return { label: "Indeciso" }; 
   }
 
   const gains = attributes.map(attr => ({
@@ -39,9 +39,9 @@ export function buildTree(data, attributes, targetAttribute, depth = 0) {
   };
 }
 
-// Función para calcular las ganancias iniciales
+
 export function calculateInitialGains(data, attributes, targetAttribute) {
-  // Aplicar imputación antes de calcular las ganancias iniciales
+  
   const cleanedData = imputeAllNulls(data);
 
   return attributes.map(attr => ({
@@ -50,9 +50,9 @@ export function calculateInitialGains(data, attributes, targetAttribute) {
   }));
 }
 
-// Función para calcular la Entropía Global
+
 export function calculateEntropyGlobal(data, targetAttribute) {
-  // Aplicar imputación antes de calcular la entropía global
+ 
   const cleanedData = imputeAllNulls(data);
 
   return calculateEntropy(cleanedData, targetAttribute);

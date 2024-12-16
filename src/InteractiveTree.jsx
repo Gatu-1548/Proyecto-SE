@@ -58,7 +58,7 @@ const InteractiveTree = ({ tree }) => {
                 <tr>
                   {filteredData.length > 0 &&
                     Object.keys(filteredData[0])
-                      .filter((key) => !excludedAttributes.has(key)) // Filtrar columnas excluidas
+                      .filter((key) => !excludedAttributes.has(key)) 
                       .map((key) => <th key={key}>{key}</th>)}
                 </tr>
               </thead>
@@ -66,7 +66,7 @@ const InteractiveTree = ({ tree }) => {
                 {filteredData.map((row, index) => (
                   <tr key={index}>
                     {Object.entries(row)
-                      .filter(([key]) => !excludedAttributes.has(key)) // Filtrar valores excluidos
+                      .filter(([key]) => !excludedAttributes.has(key)) 
                       .map(([key, value], colIndex) => (
                         <td key={colIndex}>{value}</td>
                       ))}

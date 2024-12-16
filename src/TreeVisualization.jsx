@@ -13,24 +13,24 @@ const TreeVisualization = ({ node, excludedAttributes }) => {
 
   return (
     <div className="tree-container">
-      {/* Nodo principal */}
+     
       <div className="tree-node">
         <strong>{node.label}</strong>
       </div>
 
-      {/* Ramas */}
+     
       <div className="tree-branches">
-        {/* Conexión con las ramas */}
+        
         <div className="tree-branch-connector">
           <div className="tree-branch-horizontal-line"></div>
         </div>
 
         {node.branches.map((branch, index) => (
           <div key={index} className="tree-branch-item">
-            {/* Valor de la rama */}
+            
             <div className="tree-branch-label">{branch.value}</div>
 
-            {/* Tabla intermedia */}
+            
             {branch.table && (
               <div className="tree-table-container">
                 <table className="tree-table" border="1" cellPadding="5">
@@ -58,7 +58,7 @@ const TreeVisualization = ({ node, excludedAttributes }) => {
               </div>
             )}
 
-            {/* Subárbol */}
+            
             <TreeVisualization
               node={branch.subtree}
               excludedAttributes={new Set([...excludedAttributes, node.label])}

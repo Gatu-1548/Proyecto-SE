@@ -33,15 +33,15 @@ const App = () => {
 // const targetAttribute = 'vehiculo';
 
   const handleGenerateTree = () => {
-    // Calcular Eglobal (Entropía Global)
+    
     const eGlobal = calculateEntropyGlobal(data, targetAttribute);
     setEntropyGlobal(eGlobal);
 
-    // Calcular las ganancias iniciales
+    
     const gains = calculateInitialGains(data, attributes, targetAttribute);
     setInitialGains(gains);
 
-    // Generar el árbol
+   
     const tree = buildTree(data, attributes, targetAttribute);
     setDecisionTree(tree);
   };
@@ -51,7 +51,7 @@ const App = () => {
       <h1>Árbol de Decisión</h1>
       <button onClick={handleGenerateTree}>Generar Árbol</button>
 
-      {/* Mostrar la tabla inicial */}
+     
       <h2>Tabla Inicial</h2>
       <table border="1" cellPadding="5" className="tree-table">
         <thead>
@@ -72,14 +72,14 @@ const App = () => {
         </tbody>
       </table>
 
-      {/* Mostrar la entropía global */}
+      
       <h2>Entropía Global (Eglobal)</h2>
       <p>
         Eglobal del atributo objetivo "<strong>{targetAttribute}</strong>" es:{' '}
         <strong>{entropyGlobal.toFixed(4)}</strong>
       </p>
 
-      {/* Mostrar las ganancias iniciales */}
+   
       {initialGains.length > 0 && (
         <>
           <h2>Ganancias Iniciales</h2>
@@ -94,7 +94,7 @@ const App = () => {
         </>
       )}
 
-      {/* Mostrar el árbol interactivo */}
+    
       {decisionTree && <InteractiveTree tree={decisionTree} />}
     </div>
   );

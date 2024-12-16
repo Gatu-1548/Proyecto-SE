@@ -29,15 +29,15 @@ export function calculateEntropy(data, targetAttribute) {
   }
 
   export function imputeAllNulls(data) {
-    // Identificar todas las columnas en el dataset
+   
     const attributes = Object.keys(data[0]);
   
-    // Imputar valores nulos para cada columna
+    
     return attributes.reduce((updatedData, attribute) => {
-      // Calcular el modo para cada columna
+     
       const mode = getMode(updatedData, attribute);
   
-      // Reemplazar los valores nulos en la columna actual
+     
       return updatedData.map(row => ({
         ...row,
         [attribute]: row[attribute] === null ? mode : row[attribute],
@@ -53,6 +53,6 @@ export function calculateEntropy(data, targetAttribute) {
       return acc;
     }, {});
   
-    // Obtener el atributo con mayor frecuencia
+   
     return Object.keys(counts).reduce((a, b) => (counts[a] > counts[b] ? a : b));
   }
