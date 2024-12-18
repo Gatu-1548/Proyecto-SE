@@ -1,15 +1,30 @@
+// const data = [
+//     { moroso: 'si', antiguedad: '> 5', ingresos: '600-1200', trabajo: 'tiene', credito: 'rechazado' },
+//     { moroso: 'no', antiguedad: '< 1', ingresos: '600-1200', trabajo: 'tiene', credito: 'aceptado' },
+//     { moroso: 'si', antiguedad: '1-5', ingresos: '> 1200', trabajo: 'tiene', credito: 'rechazado' },
+//     { moroso: 'no', antiguedad: '> 5', ingresos: '> 1200', trabajo: 'no-tiene', credito: 'aceptado' },
+//     { moroso: 'no', antiguedad: '< 1', ingresos: '> 1200', trabajo: 'tiene', credito: 'aceptado' },
+//     { moroso: 'si', antiguedad: '1-5', ingresos: '600-1200', trabajo: 'tiene', credito: 'rechazado' },
+//     { moroso: 'no', antiguedad: '1-5', ingresos: '> 1200', trabajo: 'teien', credito: 'aceptado' },
+//     { moroso: 'no', antiguedad: '< 1', ingresos: '< 600', trabajo: 'tiene', credito: 'rechazado' },
+//     { moroso: 'no', antiguedad: '> 5', ingresos: '600-1200', trabajo: 'no-tiene', credito: 'rechazado' },
+//     { moroso: 'si', antiguedad: '1-5', ingresos: '< 600', trabajo: 'no-tiene', credito: 'rechazado' },
+//   ];
+
 const data = [
-    { moroso: 'si', antiguedad: '> 5', ingresos: '600-1200', trabajo: 'tiene', credito: 'rechazado' },
-    { moroso: 'no', antiguedad: '< 1', ingresos: '600-1200', trabajo: 'tiene', credito: 'aceptado' },
-    { moroso: 'si', antiguedad: '1-5', ingresos: '> 1200', trabajo: 'tiene', credito: 'rechazado' },
-    { moroso: 'no', antiguedad: '> 5', ingresos: '> 1200', trabajo: 'no-tiene', credito: 'aceptado' },
-    { moroso: 'no', antiguedad: '< 1', ingresos: '> 1200', trabajo: 'tiene', credito: 'aceptado' },
-    { moroso: 'si', antiguedad: '1-5', ingresos: '600-1200', trabajo: 'tiene', credito: 'rechazado' },
-    { moroso: 'no', antiguedad: '1-5', ingresos: '> 1200', trabajo: 'teien', credito: 'aceptado' },
-    { moroso: 'no', antiguedad: '< 1', ingresos: '< 600', trabajo: 'tiene', credito: 'rechazado' },
-    { moroso: 'no', antiguedad: '> 5', ingresos: '600-1200', trabajo: 'no-tiene', credito: 'rechazado' },
-    { moroso: 'si', antiguedad: '1-5', ingresos: '< 600', trabajo: 'no-tiene', credito: 'rechazado' },
-  ];
+  { presion: 'Alta', urea: 'Alta', gota: 'Si', hipotiroidismo: 'No', tratamiento: 'No' },
+  { presion: 'Alta', urea: 'Alta', gota: 'Si', hipotiroidismo: 'Si', tratamiento: 'No' },
+  { presion: 'Normal', urea: 'Alta', gota: 'Si', hipotiroidismo: 'No', tratamiento: 'Si' },
+  { presion: 'Baja', urea: 'Normal', gota: 'Si', hipotiroidismo: 'No', tratamiento: 'Si' },
+  { presion: 'Baja', urea: 'Baja', gota: 'No', hipotiroidismo: 'No', tratamiento: 'Si' },
+  { presion: 'Baja', urea: 'Baja', gota: 'No', hipotiroidismo: 'Si', tratamiento: 'No' },
+  { presion: 'Normal', urea: 'Baja', gota: 'No', hipotiroidismo: 'Si', tratamiento: 'Si' },
+  { presion: 'Alta', urea: 'Normal', gota: 'Si', hipotiroidismo: 'No', tratamiento: 'No' },
+  { presion: 'Alta', urea: 'Baja', gota: 'No', hipotiroidismo: 'No', tratamiento: 'Si' },
+  { presion: 'Baja', urea: 'Normal', gota: 'No', hipotiroidismo: 'No', tratamiento: 'Si' },
+  { presion: 'Alta', urea: 'Normal', gota: 'No', hipotiroidismo: 'Si', tratamiento: 'No' },
+  { presion: 'Normal', urea: 'Normal', gota: 'Si', hipotiroidismo: 'Si', tratamiento: 'Si' }
+];
 
 // ejemplos para pruebas 
 // de igual forma cambiar en app por los atributos correspondientes

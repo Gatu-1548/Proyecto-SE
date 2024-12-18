@@ -6,7 +6,7 @@ const TreeVisualization = ({ node, excludedAttributes }) => {
     // Nodo hoja
     return (
       <div className="tree-node">
-        <strong>Crédito = {node.label}</strong>
+        <strong>Desicion = {node.label}</strong>
       </div>
     );
   }
